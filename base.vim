@@ -16,13 +16,44 @@ set nobackup
 set nowritebackup
 colorscheme solarized8_flat 
 
+" ------Display----------
 let g:NERDTreeWinSize = 40 
 let g:indentLine_char = '┆'
+
+" ------CtrlP settings------
 let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/](node_modules|coverage)$',
   \ }
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_by_filename=1
+
+" ------COC------
+" Add (Neo)Vim's native statusline support.
+" NOTE: Please see `:h coc-status` for integrations with external plugins that
+" provide custom statusline: lightline.vim, vim-airline.
+set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
+
+" TextEdit might fail if hidden is not set.
+set hidden
+
+" Some servers have issues with backup files, see #649.
+set nobackup
+set nowritebackup
+
+" Give more space for displaying messages.
+set cmdheight=2
+
+" Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
+" delays and poor user experience.
+set updatetime=300
+
+" Don't pass messages to |ins-completion-menu|.
+set shortmess+=c
+
+" Always show the signcolumn, otherwise it would shift the text each time
+" diagnostics appear/become resolved.
+set signcolumn=yes
+
 let g:coc_global_extensions = [
 			\'coc-tslint-plugin', 
 			\'coc-tsserver', 
@@ -40,7 +71,7 @@ let g:coc_global_extensions = [
 let g:NERDSpaceDelims = 1
 
 " Use compact syntax for prettified multi-line comments
-" let g:NERDCompactSexyComs = 1
+let g:NERDCompactSexyComs = 1
 
 " Align line-wise comment delimiters flush left instead of following code indentation
 let g:NERDDefaultAlign = 'left'
