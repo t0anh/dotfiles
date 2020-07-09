@@ -2,8 +2,6 @@ call plug#begin()
 
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-Plug 'morhetz/gruvbox'
-Plug 'altercation/vim-colors-solarized'
 Plug 'lifepillar/vim-solarized8'
 Plug 'iCyMind/NeoSolarized'
 Plug 'vim-airline/vim-airline'

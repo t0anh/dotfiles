@@ -1,16 +1,16 @@
+" Ctrl+b to toggle NerdTree
 map <C-b> :NERDTreeToggle<CR>
-map <C-m> :NERDTreeFind<CR>
+
+" Ctrl+/ to toggle comment
 map <C-_> <plug>NERDCommenterToggle
 
+" [ or ]+h to go to prev/next hunk
 nmap ]h <Plug>(GitGutterNextHunk)
 nmap [h <Plug>(GitGutterPrevHunk)
 
+" Alt+j/k to move line up/down
 nnoremap <A-j> :m .+1<CR>==
 nnoremap <A-k> :m .-2<CR>==
-inoremap <A-j> <Esc>:m .+1<CR>==gi
-inoremap <A-k> <Esc>:m .-2<CR>==gi
-vnoremap <A-j> :m '>+1<CR>gv=gv
-vnoremap <A-k> :m '<-2<CR>gv=gv
 
 " ---------COC------------
 " TextEdit might fail if hidden is not set.
@@ -81,17 +81,10 @@ function! s:show_documentation()
   endif
 endfunction
 
-" Highlight the symbol and its references when holding the cursor.
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
-
-" Formatting selected code.
-xmap <leader>fs  <Plug>(coc-format-selected)
-nmap <leader>fs  <Plug>(coc-format-selected)
-xmap <leader>f  <Plug>(coc-format)
-nmap <leader>f  <Plug>(coc-format)
 
 augroup mygroup
   autocmd!

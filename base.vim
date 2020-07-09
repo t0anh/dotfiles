@@ -1,7 +1,7 @@
 syntax enable 
 filetype plugin on
 filetype plugin indent on
-colorscheme solarized8_flat 
+set hidden
 set background=dark
 set ruler
 set number
@@ -12,6 +12,9 @@ set shiftwidth=2
 set termguicolors
 set cursorline
 set ruler
+set nobackup
+set nowritebackup
+colorscheme solarized8_flat 
 
 let g:NERDTreeWinSize = 40 
 let g:indentLine_char = '┆'
