@@ -1,3 +1,3 @@
-source ./plugins.vim
-source ./base.vim
-source ./mapping.vim
+source ~/.config/nvim/plugins.vim
+source ~/.config/nvim/config.vim
+source ~/.config/nvim/mapping.vim
