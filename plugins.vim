@@ -3,9 +3,8 @@ call plug#begin()
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'lifepillar/vim-solarized8'
-Plug 'iCyMind/NeoSolarized'
 Plug 'vim-airline/vim-airline'
-Plug 'chriskempson/base16-vim'
+Plug 'ruanyl/coverage.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ianks/vim-tsx'

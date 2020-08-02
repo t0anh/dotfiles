@@ -96,3 +96,31 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+"----------Coverrage----------
+" Specify the path to `coverage.json` file relative to your current working directory.
+let g:coverage_json_report_path = 'coverage/coverage-final.json'
+
+" Define the symbol display for covered lines
+let g:coverage_sign_covered = '⦿'
+
+" Define the interval time of updating the coverage lines
+let g:coverage_interval = 5000
+
+" Do not display signs on covered lines
+let g:coverage_show_covered = 0
+
+" Display signs on uncovered lines
+let g:coverage_show_uncovered = 0
+
+" Toggle un-coverage signs
+function ToggleUnCoverage()
+	let g:coverage_show_uncovered = 1 - g:coverage_show_uncovered
+
+	if g:coverage_show_uncovered
+		" update signs
+		call coverage#process_buffer()
+	else
+		call coverage#sign#clear_signs()
+	endif
+
+endfunction

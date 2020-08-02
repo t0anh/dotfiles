@@ -123,3 +123,5 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
+" Add :Cov to toggle coverage
+command! -nargs=0 Cov :call ToggleUnCoverage()
