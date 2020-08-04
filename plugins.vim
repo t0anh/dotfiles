@@ -18,5 +18,7 @@ Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'yggdroot/indentline'
+Plug 'chriskempson/base16-vim'
+Plug 'ayu-theme/ayu-vim'
 
 call plug#end()
