@@ -1,6 +1,5 @@
 " Ctrl + b to toggle NerdTree
-map <C-b> :NERDTreeToggle<CR>
-map <C-m> :NERDTreeFind<CR>
+map <C-m> :NERDTreeToggle<CR>
 
 " Ctrl + / to toggle comment
 map <C-_> <plug>NERDCommenterToggle
