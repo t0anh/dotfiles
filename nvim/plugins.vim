@@ -20,5 +20,6 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'yggdroot/indentline'
 Plug 'chriskempson/base16-vim'
 Plug 'ayu-theme/ayu-vim'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
