@@ -23,6 +23,8 @@ colorscheme solarized8_flat
 " let ayucolor="dark"   " for dark version of theme
 " colorscheme ayu
 
+" use clipboard for yank
+set clipboard=unnamedplus
 
 " ------Display----------
 let g:NERDTreeWinSize = 40 
