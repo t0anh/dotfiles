@@ -16,15 +16,9 @@ set nobackup
 set nowritebackup
 
 colorscheme solarized8_flat
-" colorscheme base16-default-dark
-
-" let ayucolor="light"  " for light version of theme
-" let ayucolor="mirage" " for mirage version of theme
-" let ayucolor="dark"   " for dark version of theme
-" colorscheme ayu
 
 " use clipboard for yank
-set clipboard=unnamedplus
+set clipboard+=unnamedplus
 
 " ------Display----------
 let g:NERDTreeWinSize = 40 
