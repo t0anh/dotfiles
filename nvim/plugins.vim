@@ -21,5 +21,6 @@ Plug 'yggdroot/indentline'
 Plug 'chriskempson/base16-vim'
 Plug 'ayu-theme/ayu-vim'
 Plug 'sheerun/vim-polyglot'
+Plug 'yardnsm/vim-import-cost', { 'do': 'npm install' }
 
 call plug#end()

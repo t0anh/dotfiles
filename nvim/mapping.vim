@@ -104,8 +104,8 @@ command! -nargs=0 Format :call CocAction('format')
 " Add `:Fold` command to fold current buffer.
 command! -nargs=? Fold :call     CocAction('fold', <f-args>)
 
-" Add `:OR` command for organize imports of the current buffer.
-command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+" Add `:OI` command for organize imports of the current buffer.
+command! -nargs=0 OI   :call     CocAction('runCommand', 'editor.action.organizeImport') 
 
 " Show all diagnostics.
 nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>

@@ -1,8 +1,9 @@
 syntax enable 
 filetype plugin on
 filetype plugin indent on
+
 set hidden
-set background=dark
+set background=light
 set ruler
 set number
 set linespace=4
@@ -16,15 +17,9 @@ set nobackup
 set nowritebackup
 
 colorscheme solarized8_flat
-" colorscheme base16-default-dark
-
-" let ayucolor="light"  " for light version of theme
-" let ayucolor="mirage" " for mirage version of theme
-" let ayucolor="dark"   " for dark version of theme
-" colorscheme ayu
 
 " use clipboard for yank
-set clipboard=unnamedplus
+set clipboard+=unnamedplus
 
 " ------Display----------
 let g:NERDTreeWinSize = 40 
@@ -134,3 +129,11 @@ function ToggleUnCoverage()
 	endif
 
 endfunction
+
+" Auto detect import cost in js 
+augroup import_cost_auto_run
+  autocmd!
+  autocmd InsertLeave *.js,*.jsx,*.ts,*.tsx ImportCost
+  autocmd BufEnter *.js,*.jsx,*.ts,*.tsx ImportCost
+  autocmd CursorHold *.js,*.jsx,*.ts,*.tsx ImportCost
+augroup END
