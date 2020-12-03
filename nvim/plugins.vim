@@ -1,23 +1,44 @@
 call plug#begin()
 
+" Language packs
+Plug 'sheerun/vim-polyglot'
+
+" Syntastis
+Plug 'scrooloose/syntastic'
+
+" Surround
+Plug 'tpope/vim-surround'
+
+" Icons
+Plug 'ryanoasis/vim-devicons'
+
+" Auto pairs
+Plug 'jiangmiao/auto-pairs'
+
+" Indent
+Plug 'yggdroot/indentline'
+
+" Git
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+
+" NERD 
 Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-Plug 'lifepillar/vim-solarized8'
-Plug 'vim-airline/vim-airline'
-Plug 'ruanyl/coverage.vim'
-Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
-Plug 'jiangmiao/auto-pairs'
-Plug 'scrooloose/syntastic'
-Plug 'xuyuanp/nerdtree-git-plugin'
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'ryanoasis/vim-devicons'
-Plug 'yggdroot/indentline'
-Plug 'sheerun/vim-polyglot'
-Plug 'yardnsm/vim-import-cost', { 'do': 'npm install' }
-Plug 'kien/ctrlp.vim'
+Plug 'xuyuanp/nerdtree-git-plugin'
 
-" Coc
+" Themes
+Plug 'lifepillar/vim-solarized8'
+
+" Import cost
+Plug 'yardnsm/vim-import-cost', { 'do': 'npm install' }
+
+" Finder
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+
+" LSP
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Typescript

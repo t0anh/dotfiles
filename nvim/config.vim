@@ -15,22 +15,16 @@ set cursorline
 set ruler
 set nobackup
 set nowritebackup
+set relativenumber
 
 colorscheme solarized8_flat
 
 " use clipboard for yank
 set clipboard+=unnamedplus
 
-" ------Display----------
+" ------NERDTree----------
 let g:NERDTreeWinSize = 40 
 let g:indentLine_char = '┆'
-
-" ------CtrlP settings------
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/](node_modules|coverage)$',
-  \ }
-let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_by_filename=1
 
 " ------COC------
 " Add (Neo)Vim's native statusline support.
@@ -68,6 +62,7 @@ let g:coc_global_extensions = [
 			\'coc-json', 
 			\'coc-yank', 
 			\'coc-prettier'
+			\'coc-clangd'
 			\]
 
 " ------NERDCommenter------
@@ -101,35 +96,6 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
-"----------Coverrage----------
-" Specify the path to `coverage.json` file relative to your current working directory.
-let g:coverage_json_report_path = 'coverage/coverage-final.json'
-
-" Define the symbol display for covered lines
-let g:coverage_sign_covered = '⦿'
-
-" Define the interval time of updating the coverage lines
-let g:coverage_interval = 5000
-
-" Do not display signs on covered lines
-let g:coverage_show_covered = 0
-
-" Display signs on uncovered lines
-let g:coverage_show_uncovered = 0
-
-" Toggle un-coverage signs
-function ToggleUnCoverage()
-	let g:coverage_show_uncovered = 1 - g:coverage_show_uncovered
-
-	if g:coverage_show_uncovered
-		" update signs
-		call coverage#process_buffer()
-	else
-		call coverage#sign#clear_signs()
-	endif
-
-endfunction
-
 " Auto detect import cost in js 
 augroup import_cost_auto_run
   autocmd!
@@ -137,3 +103,4 @@ augroup import_cost_auto_run
   autocmd BufEnter *.js,*.jsx,*.ts,*.tsx ImportCost
   autocmd CursorHold *.js,*.jsx,*.ts,*.tsx ImportCost
 augroup END
+
