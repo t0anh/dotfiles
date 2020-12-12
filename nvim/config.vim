@@ -15,7 +15,6 @@ set cursorline
 set ruler
 set nobackup
 set nowritebackup
-set relativenumber
 
 colorscheme solarized8_flat
 
