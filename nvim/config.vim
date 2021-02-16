@@ -3,7 +3,7 @@ filetype plugin on
 filetype plugin indent on
 
 set hidden
-set background=light
+set background=dark
 set ruler
 set number
 set linespace=4
