@@ -1,0 +1,26 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: Open Default Keymap`
+// from the command palette.
+[
+  {
+    "context": "vim_mode == normal || vim_mode == visual",
+    "bindings": {
+      "q f": "editor::ToggleCodeActions",
+      "c a": "editor::ToggleCodeActions",
+      "shift-l": ["workspace::SendKeystrokes", "$"],
+      "shift-f": ["workspace::SendKeystrokes", "^"],
+      "shift-j": ["workspace::SendKeystrokes", "%"]
+    }
+  },
+  {
+    "bindings": {
+      "cmd-w": "pane::CloseActiveItem",
+      "ctrl-w": "pane::CloseActiveItem",
+      "alt-w": "pane::CloseActiveItem"
+    }
+  }
+]

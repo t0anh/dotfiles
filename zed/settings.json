@@ -18,15 +18,20 @@
   "features": {
     "inline_completion_provider": "supermaven"
   },
+  "vim": {
+    "use_system_clipboard": "always"
+  },
+  "relative_line_numbers": true,
   "vim_mode": true,
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
+  "ui_font_size": 15,
+  "buffer_font_size": 15,
+  "buffer_font_weight": 400,
   "buffer_font_family": "Iosevka",
   "ui_font_family": "Iosevka",
   "theme": {
     "mode": "system",
-    "light": "Gruvbox Dark Hard",
-    "dark": "Gruvbox Dark Hard"
+    "light": "Solarized Dark",
+    "dark": "Solarized Dark"
   },
   "terminal": { "dock": "right" }
 }
