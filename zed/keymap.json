@@ -20,7 +20,8 @@
     "bindings": {
       "cmd-w": "pane::CloseActiveItem",
       "ctrl-w": "pane::CloseActiveItem",
-      "alt-w": "pane::CloseActiveItem"
+      "alt-w": "pane::CloseActiveItem",
+      "alt-r": "editor::Rename"
     }
   }
 ]
