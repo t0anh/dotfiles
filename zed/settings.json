@@ -14,6 +14,7 @@
     },
     "version": "2"
   },
+  "buffer_line_height": "standard",
   "show_inline_completions": true,
   "features": {
     "inline_completion_provider": "supermaven"
@@ -21,11 +22,11 @@
   "vim": {
     "use_system_clipboard": "always"
   },
+  "autosave": "on_focus_change",
   "relative_line_numbers": true,
   "vim_mode": true,
   "ui_font_size": 15,
   "buffer_font_size": 15,
-  "buffer_font_weight": 400,
   "buffer_font_family": "Iosevka",
   "ui_font_family": "Iosevka",
   "theme": {
@@ -33,5 +34,9 @@
     "light": "Solarized Dark",
     "dark": "Solarized Dark"
   },
-  "terminal": { "dock": "right" }
+  "terminal": {
+    "dock": "right",
+    "line_height": "standard",
+    "font_family": "Iosevka"
+  }
 }
