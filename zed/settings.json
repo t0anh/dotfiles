@@ -31,7 +31,7 @@
   "ui_font_family": "Zed Mono",
   "theme": {
     "mode": "system",
-    "light": "Nightfox",
+    "light": "Solarized Dark",
     "dark": "Solarized Dark"
   },
   "terminal": {
