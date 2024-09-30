@@ -90,9 +90,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vi'
+  export EDITOR='vim'
 else
-  export EDITOR='vi'
+  export EDITOR='vim'
 fi
 
 # Compilation flags
@@ -111,3 +111,4 @@ fi
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+export PATH=$HOME/.local/bin:$PATH
